@@ -121,6 +121,18 @@ a { color: inherit; }
 }
 .hero__stories:hover { background: rgba(255,255,255,.18); }
 
+/* Distintivo del tatuador */
+.artist-badge {
+  display: inline-flex; align-items: center; gap: .4em;
+  margin-top: -4px; padding: .5em 1.05em;
+  border-radius: 999px; background: var(--violeta-hondo); box-shadow: inset 0 0 0 1.5px var(--violeta);
+  font: 700 1.05rem/1 var(--text); text-decoration: none; color: var(--blanco);
+}
+.artist-badge span { font-weight: 400; color: #c4b5fd; }
+.artist-badge:hover { background: #321a57; }
+.artist-badge--small { margin: 0; font-size: .95rem; }
+.place__who { margin: 0 0 16px; }
+
 /* Secciones */
 .section { max-width: var(--max); margin: 0 auto; padding: clamp(64px, 10vw, 120px) var(--gutter) 0; }
 .section__head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 24px; margin-bottom: 32px; }
@@ -174,6 +186,7 @@ h2 { margin: 0; font: 900 clamp(3rem, 8vw, 5.5rem)/.9 var(--display); letter-spa
   display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px;
 }
 .foot img { height: 56px; width: auto; }
+.foot__artist { margin: 0; color: var(--gris); }
 .foot ul { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; }
 .foot__updated { margin: 0 0 0 auto; color: var(--gris); font-size: .85rem; }
 
