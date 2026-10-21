@@ -8,10 +8,9 @@
   /* ---------- Enlaces de WhatsApp y mapa desde config ---------- */
   const waHref = `https://wa.me/${C.whatsapp}?text=${encodeURIComponent(C.whatsappMessage || "")}`;
   $$(".js-wa").forEach(a => (a.href = waHref));
-  if (C.mapsQuery) {
-    const q = encodeURIComponent(C.mapsQuery);
-    $$(".js-maps").forEach(a => (a.href = `https://www.google.com/maps/search/?api=1&query=${q}`));
-    $$(".js-map").forEach(f => (f.src = `https://www.google.com/maps?q=${q}&z=14&output=embed`));
+  if (C.mapsLink) $$(".js-maps").forEach(a => (a.href = C.mapsLink));
+  if (C.mapsLat && C.mapsLng) {
+    $$(".js-map").forEach(f => (f.src = `https://www.google.com/maps?q=${C.mapsLat},${C.mapsLng}&z=16&output=embed`));
   }
 
   /* ---------- Header sólido al scrollear ---------- */
@@ -46,6 +45,9 @@
     .finally(() => {
       if (!posts.length) posts = FALLBACK;
       renderGrid();
+      // La foto de fondo de la portada es la última publicación con imagen
+      const lead = posts.find(p => p.type !== "VIDEO" || p.poster);
+      if (lead && !String(lead.id).startsWith("local-")) $("#hero-img").src = lead.type === "VIDEO" ? lead.poster : lead.src;
       if (stories.length) $$("[data-open-stories]").forEach(b => (b.hidden = false));
     });
 

@@ -3,6 +3,8 @@ window.NEURON = {
   whatsapp: "5493544304161",
   whatsappMessage: "¡Hola Neurón! Quiero consultar por un tatuaje.",
   instagram: "tatuajesneuron",
-  // Cuando tengas la dirección exacta, ponela acá (ej: "Calle 123, San Javier, Córdoba")
-  mapsQuery: "San Javier, Córdoba, Argentina"
+  // Ubicación del estudio en Google Maps
+  mapsLink: "https://maps.app.goo.gl/b9uMbxAwMiUSCcQ4A",
+  mapsLat: -32.0279037,
+  mapsLng: -65.0304285
 };

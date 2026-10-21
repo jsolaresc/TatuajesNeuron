@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tatuajes Neurón · San Javier, Traslasierra</title>
   <meta name="description" content="Estudio de tatuajes en San Javier, Traslasierra (Córdoba). Mirá los últimos trabajos y pedí turno por WhatsApp.">
-  <meta name="theme-color" content="#150c21">
+  <meta name="theme-color" content="#000000">
   <meta property="og:title" content="Tatuajes Neurón">
   <meta property="og:description" content="Estudio de tatuajes en San Javier, Traslasierra.">
   <meta property="og:image" content="assets/img/avatar.png">
@@ -23,6 +23,10 @@
     "name": "Tatuajes Neurón",
     "telephone": "+5493544304161",
     "address": {"@type": "PostalAddress", "addressLocality": "San Javier", "addressRegion": "Córdoba", "addressCountry": "AR"},
+    "geo": {"@type": "GeoCoordinates", "latitude": -32.0279037, "longitude": -65.0304285},
+    "hasMap": "https://maps.app.goo.gl/b9uMbxAwMiUSCcQ4A",
+    "founder": {"@type": "Person", "name": "Hernán Solares Costa"},
+    "foundingDate": "2017",
     "sameAs": ["https://www.instagram.com/tatuajesneuron/"]
   }
   </script>
@@ -36,30 +40,27 @@
     </a>
     <nav class="top__nav" aria-label="Secciones">
       <a href="#trabajos">Trabajos</a>
-      <a href="#archivo">Archivo</a>
+      <a href="#hernan">Hernán</a>
       <a href="#ubicacion">Dónde estamos</a>
     </nav>
     <div class="top__actions">
       <button class="story-ring" type="button" data-open-stories hidden aria-label="Ver historias de hoy">
         <img src="assets/img/avatar.png" alt="" width="256" height="256">
       </button>
-      <a class="btn btn--small js-wa" href="https://wa.me/5493544304161" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn--wa btn--small js-wa" href="https://wa.me/5493544304161" target="_blank" rel="noopener">WhatsApp</a>
     </div>
   </header>
 
   <main>
     <section class="hero" id="inicio">
-      <div class="hero__opart" aria-hidden="true">
-        <div class="hero__rays"></div>
-        <div class="hero__rings"></div>
-      </div>
+      <div class="hero__bg" aria-hidden="true"><img id="hero-img" src="assets/img/trabajos/t15.webp" alt=""></div>
       <div class="hero__inner">
         <h1 class="hero__logo">
-          <img src="assets/img/logo-neuron.webp" alt="Tatuajes Neurón" width="577" height="900">
+          <img src="assets/img/wordmark.png" alt="Tatuajes Neurón" width="800" height="654">
         </h1>
         <p class="hero__lead">Estudio de tatuajes en San Javier, Traslasierra.</p>
         <div class="hero__cta">
-          <a class="btn js-wa" href="https://wa.me/5493544304161" target="_blank" rel="noopener">
+          <a class="btn btn--wa js-wa" href="https://wa.me/5493544304161" target="_blank" rel="noopener">
             <svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-wa"/></svg>
             Pedir turno por WhatsApp
           </a>
@@ -85,20 +86,20 @@
       </p>
     </section>
 
-    <section class="section section--archivo" id="archivo" aria-labelledby="archivo-t">
-      <div class="section__head">
-        <h2 id="archivo-t">Desde 2017</h2>
-        <p class="section__sub">Volantes que fuimos haciendo en el camino.</p>
+    <section class="artist" id="hernan" aria-labelledby="hernan-t">
+      <div class="artist__inner">
+        <figure class="artist__photo">
+          <img src="assets/img/hernan.webp" alt="Hernán Solares Costa tatuando" width="453" height="604" loading="lazy">
+        </figure>
+        <h2 id="hernan-t">Hernán Solares Costa</h2>
+        <div class="artist__body">
+          <p>Hernán tatúa hace 15 años. En 2017 abrió Tatuajes Neurón, el estudio donde hoy hace cada trabajo de principio a fin: desde la primera charla sobre tu idea hasta la última sesión.</p>
+          <dl class="artist__facts">
+            <div><dt>Experiencia</dt><dd>15 años</dd></div>
+            <div><dt>Neurón</dt><dd>Desde 2017</dd></div>
+          </dl>
+        </div>
       </div>
-      <ol class="timeline">
-        <li><figure><img loading="lazy" src="assets/img/flyers/2017.webp" alt="Volante de 2017 con fondo de galaxia" width="720" height="826"><figcaption>2017</figcaption></figure></li>
-        <li><figure><img loading="lazy" src="assets/img/flyers/2018.webp" alt="Volante de 2018" width="720" height="810"><figcaption>2018</figcaption></figure></li>
-        <li><figure><img loading="lazy" src="assets/img/flyers/2019.webp" alt="Volante de 2019 con fondo psicodélico" width="284" height="379"><figcaption>2019</figcaption></figure></li>
-        <li><figure><img loading="lazy" src="assets/img/flyers/2020.webp" alt="Volante de 2020 con ilusión óptica violeta y amarilla" width="720" height="965"><figcaption>2020</figcaption></figure></li>
-        <li><figure><img loading="lazy" src="assets/img/flyers/2020b.webp" alt="Volante de 2020 con nebulosa" width="720" height="965"><figcaption>2020</figcaption></figure></li>
-        <li><figure><img loading="lazy" src="assets/img/flyers/2021.webp" alt="Volante de 2021 en rojo sobre pincelada negra" width="720" height="928"><figcaption>2021</figcaption></figure></li>
-        <li><figure><img loading="lazy" src="assets/img/flyers/2021b.webp" alt="Volante de 2021 con ilusión óptica" width="720" height="965"><figcaption>2021</figcaption></figure></li>
-      </ol>
     </section>
 
     <section class="section section--ubicacion" id="ubicacion" aria-labelledby="ubicacion-t">
@@ -108,16 +109,16 @@
           <p class="place__where">San Javier, Traslasierra<br>Córdoba, Argentina</p>
           <p>Trabajamos con turno. Mandanos tu idea por WhatsApp, con referencias, tamaño y zona del cuerpo, y coordinamos el día.</p>
           <div class="place__actions">
-            <a class="btn js-wa" href="https://wa.me/5493544304161" target="_blank" rel="noopener">
+            <a class="btn btn--wa js-wa" href="https://wa.me/5493544304161" target="_blank" rel="noopener">
               <svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-wa"/></svg>
               +54 9 3544 30-4161
             </a>
-            <a class="btn btn--ghost js-maps" href="https://www.google.com/maps/search/?api=1&query=San+Javier%2C+C%C3%B3rdoba%2C+Argentina" target="_blank" rel="noopener">Abrir en Google Maps</a>
+            <a class="btn btn--ghost js-maps" href="https://maps.app.goo.gl/b9uMbxAwMiUSCcQ4A" target="_blank" rel="noopener">Abrir en Google Maps</a>
           </div>
         </div>
         <div class="place__map">
-          <iframe class="js-map" title="Mapa de San Javier, Traslasierra" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=San+Javier,+C%C3%B3rdoba,+Argentina&z=14&output=embed"></iframe>
+          <iframe class="js-map" title="Mapa: Tatuajes Neurón en San Javier" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=-32.0279037,-65.0304285&z=16&output=embed"></iframe>
         </div>
       </div>
     </section>
@@ -132,7 +133,7 @@
     <p class="foot__updated" id="updated"></p>
   </footer>
 
-  <a class="wa-float js-wa" href="https://wa.me/5493544304161" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <a class="wa-float btn--wa js-wa" href="https://wa.me/5493544304161" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
     <svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-wa"/></svg>
   </a>
 

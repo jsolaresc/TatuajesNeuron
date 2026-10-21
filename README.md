@@ -2,8 +2,8 @@
 
 Sitio estático para GitHub Pages. No necesita hosting pago: solo el dominio.
 
-- `index.html`, `assets/` — el sitio.
-- `assets/js/config.js` — WhatsApp, mensaje predeterminado, usuario de Instagram y ubicación del mapa. **Para cambiar la dirección, editá `mapsQuery` acá.**
+- `index.html`, `assets/` — el sitio. La foto de Hernán está en `assets/img/hernan.webp` (reemplazala con el mismo nombre para cambiarla).
+- `assets/js/config.js` — WhatsApp, mensaje predeterminado, usuario de Instagram y ubicación del estudio (link y coordenadas de Google Maps).
 - `scripts/sync-instagram.mjs` — baja publicaciones e historias de Instagram.
 - `.github/workflows/deploy.yml` — cada 30 minutos sincroniza Instagram y publica el sitio.
 
