@@ -123,14 +123,12 @@ a { color: inherit; }
 
 /* Distintivo del tatuador */
 .artist-badge {
-  display: inline-flex; align-items: center; gap: .4em;
-  margin-top: -4px; padding: .5em 1.05em;
-  border-radius: 999px; background: var(--violeta-hondo); box-shadow: inset 0 0 0 1.5px var(--violeta);
-  font: 700 1.05rem/1 var(--text); text-decoration: none; color: var(--blanco);
+  display: inline-block; margin-top: -6px;
+  font: 700 1.15rem/1.3 var(--text); text-decoration: none; color: var(--blanco);
 }
-.artist-badge span { font-weight: 400; color: #c4b5fd; }
-.artist-badge:hover { background: #321a57; }
-.artist-badge--small { margin: 0; font-size: .95rem; }
+.artist-badge span { font-weight: 400; color: var(--gris); }
+.artist-badge:hover { text-decoration: underline; text-decoration-color: var(--violeta); text-underline-offset: 4px; }
+.artist-badge--small { margin: 0; font-size: 1rem; }
 .place__who { margin: 0 0 16px; }
 
 /* Secciones */
